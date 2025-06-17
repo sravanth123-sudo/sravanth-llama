@@ -9,8 +9,8 @@ from llama_index.core import SimpleDirectoryReader
 from dotenv import load_dotenv
 load_dotenv()
 
-#openai.api_key = st.secrets.openai_key
-openai.api_key = os.getenv('OPENAI_API_KEY')
+openai.api_key = st.secrets.openai_key
+#openai.api_key = os.getenv('OPENAI_API_KEY')
 st.header("Chat with the Streamlit docs 💬 📚")
 
 if "messages" not in st.session_state.keys(): # Initialize the chat message history
